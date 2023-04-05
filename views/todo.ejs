@@ -3,7 +3,7 @@
 <html>
 
     <head>
-        <title>My shaandaar todolist</title>
+        <title>todolist</title>
         <style>
             a {
                 text-decoration: none;
@@ -14,7 +14,8 @@
     </head>
 
     <body>
-        <h1>GNA Students are Super Duper Awesome</h1>
+        <h1>TO-DO LIST</h1>
+        <h2>JUST DO IT!</h2>
         <ul>
             <% todolist.forEach(function(todo, index) { %>
             <li>
@@ -27,7 +28,7 @@
 
         <form action="/todo/add/" method="post">
             <p>
-                <label for="newtodo">What shoud I do?</label>
+                <label for="newtodo">Add Task?</label>
                 <input type="text" name="newtodo" id="newtodo" autofocus />
                 <input type="submit" value="Add" />
             </p>
